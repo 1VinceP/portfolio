@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.projects-body {
+    width: 100%;
+    min-height: 500px;
+    /* height: 650px; */
+    background:linear-gradient(to right, #F8988C, #FFD17F );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px 120px 60px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.projects-display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects-hint-banner {
+    width: 275px;
+    height: 40px;
+    color: white;
+    background: rgba( 0, 0, 0, 0.6 );
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    box-shadow: -4px 4px 10px rgba( 0, 0, 0, 0.4 );
+    border-radius: 0 5px 5px 0;
+    padding: 6px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projects-hint-banner p {
+    margin: 0px;
+}
+
+.projects-project {
+    height: 385px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background: rgba( 0, 0, 0, 0.4 );
+    border-radius: 5px;
+}
+
+.projects-project-info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projects-project-details {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+.project-details-box {
+    overflow-y: scroll;
+}
+
+.project-details-box::-webkit-scrollbar {
+    width: 8px;
+    margin-right: 4px;
+}
+
+.project-details-box::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba( 0, 0, 0, 0.4 );
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+.projects-tech {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.projects-project img {
+    width: 360px;
+    border-radius: 5px 5px 0 0;
+}
+
+.projects-project p {
+    padding: 0 20px;
+}
