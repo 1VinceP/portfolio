@@ -23,3 +23,15 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+@media (max-width: 750px) {
+    .main-body {
+        width: 100%;
+        padding-left: 20px;
+        padding-bottom: 40px;
+        background-position: 55% center;
+    }
+
+    .main-greeting {
+        font-size: 48px;
+    }
+}

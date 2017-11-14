@@ -17,7 +17,6 @@ html {
 
 .app-sidebyside {
   width: 100%;
-  height: 350px;
   display: flex;
 }
 
@@ -30,4 +29,20 @@ html {
   align-items: center;
   padding-left: 20px;
   font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  .app-body {
+    width: 100%;
+  }
+
+  .app-sidebyside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-footer {
+    width: 100%;
+  }
 }

@@ -39,3 +39,17 @@ html {
     flex-direction: column;
     align-items: center;
 }
+
+@media (max-width: 750px) {
+    .skills-body {
+        width: 100%;
+    }
+
+    .skills {
+        width: 90%;
+    }
+
+    .two {
+        width: 75%;
+    }
+}

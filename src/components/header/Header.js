@@ -7,8 +7,43 @@ class Header extends Component {
         super();
 
         this.state = {
-
+            width: 0,
+            skills: 0,
+            projects: 0,
+            about: 0,
+            contact: 0,
+            contactTitle: ''
         }
+    }
+
+    componentWillMount() {
+        this.setState({
+            width: window.innerWidth
+        })
+    }
+
+    componentDidMount() {
+
+        if( this.state.width > 800 ) {
+            console.log( this.state.width )
+            this.setState({
+                skills: 600,
+                projects: 992,
+                contact: 2000,
+                contactTitle: 'Contact Me'
+            })
+        }
+        else {
+            console.log( this.state.width )
+            this.setState({
+                skills: 570,
+                projects: 950,
+                about: 2180,
+                contact: 6000,
+                contactTitle: 'Contact'
+            })
+        }
+
     }
 
     onNavClick( offset ) {
@@ -25,6 +60,9 @@ class Header extends Component {
     }
 
     render() {
+
+        console.log( this.state )
+        console.log( this.state.width )
         return(
             <div className='header-body'>
                 <section className='header-left'>
@@ -34,10 +72,10 @@ class Header extends Component {
                 <section className='header-right'>
                     <nav>
                         <div className='header-link' onClick={() => this.onNavClick( 0 )} >Home</div>
-                        <div className='header-link' onClick={() => this.onNavClick( 600 )} >Skills</div>
-                        <div className='header-link' onClick={() => this.onNavClick( 992 )} >Projects</div>
-                        {/* <div className='header-link' onClick={() => this.onNavClick( 1650 )} >About</div> */}
-                        <div className='header-link header-contact' onClick={() => this.onNavClick( 2000 )} >Contact Me</div>
+                        <div className='header-link' onClick={() => this.onNavClick( this.state.skills )} >Skills</div>
+                        <div className='header-link' onClick={() => this.onNavClick( this.state.projects )} >Projects</div>
+                        <div className='header-link header-about' onClick={() => this.onNavClick( this.state.about )} >About</div>
+                        <div className='header-link header-contact' onClick={() => this.onNavClick( this.state.contact )} >{this.state.contactTitle}</div>
                     </nav>
                 </section>
             </div>

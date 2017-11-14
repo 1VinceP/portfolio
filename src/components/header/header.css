@@ -59,6 +59,57 @@ html {
     color: #FFFF93;
 }
 
+.header-about {
+    display: none;
+}
+
 .header-contact {
     margin-left: 20px;
+}
+
+@media (max-width: 750px) {
+    .header-body {
+        height: 100px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .header-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-left div {
+        color: #F8988C;
+    }
+
+    .header-link-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-right > nav {
+        width: 100%;
+    }
+
+    .header-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-about {
+        display: block;
+    }
+
+    .header-contact {
+        margin: 0;
+    }
 }

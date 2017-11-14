@@ -1,16 +1,16 @@
 module.exports = [
         {
             title: 'WorkFlow',
-            link: 'https://github.com/Project-Management-dm27/project-management',
+            link: 'http://27projectmanagement.com',
             techs: 'React | Redux | Node.js | PostgreSQL | RESTful API | Recharts | Auth0 | HTML5 | CSS3',
-            info: 'WorkFlow is a project management tool that uses gantt chart logic to assign tasks to users.',
+            info: `WorkFlow is a project management tool that uses gantt chart logic to assign tasks to users. Username: demoaccount@gmail.com | password: demoaccess`,
             details: `WorkFlow is a group project designed to help organize projects. We used React with a very heavy emphasis on Redux in the front end, with Node.js and express in the back end. We connected to our postgreSQL tables with massive, and used Auth0 for authentication. Recharts is a great program for creating graphs that we utilized for our analytics section.`
         },
         {
             title: 'Tree Frogs Wed',
             link: 'https://treefrogswed.now.sh/#/',
             techs: 'React | Node.js | PostgreSQL | RESTful API | Auth0 | Stripe | HTML5 | CSS3',
-            info: 'Tree Frogs Wed is an eCommerce website where a customer can buy products for weddings and receptions.',
+            info: 'Tree Frogs Wed is an eCommerce website where a customer can buy products for weddings and receptions. Username: demoaccount@gmail.com | password: demoaccess',
             details: `This is the first full sized website that I have made. I used React for the front end, along with Node.js and Express for the back end. I used massive to connect with my postgreSQL database. Auth0 and Stripe were used for authentication and payment.`
         },
         {
