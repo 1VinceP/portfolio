@@ -57,6 +57,7 @@ html {
     background: rgba( 0, 0, 0, 0.4 );
     border-radius: 5px;
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .projects-project-info {

@@ -14,6 +14,13 @@ module.exports = [
             details: `This is the first full sized website that I have made. I used React for the front end, along with Node.js and Express for the back end. I used massive to connect with my postgreSQL database. Auth0 and Stripe were used for authentication and payment.`
         },
         {
+            title: 'Dressing Your Truth Clone',
+            link: 'https://liveyourtruthclone.surge.sh',
+            techs: 'React | HTML5 | CSS3 | JavaScript',
+            info: 'This is a clone of the Live Your Truth webstore. I have been making this clone on the side to get more practice with styling. I specifically focused on getting the elements in their exact places to practice working with a UI/UX team. ',
+            details: 'The hardest part was getting the styling to change based on which "type" you were looking at, and I feel like I learned a lot about managing styling inside the JSX of React. It is currently only the front page, but I plan on adding routing and such once I finish other projects.'
+        },
+        {
             title: `Swanson's Pets`,
             link: 'http://talking-animals.surge.sh',
             techs: 'React | RESTful API',

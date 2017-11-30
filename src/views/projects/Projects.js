@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import data from '../../components/projectData/ProjectData';
 import workFlow from '../../images/dashboard.jpg';
 import treeFrogsWed from '../../images/tree-frogs-order.PNG';
+import truthClone from '../../images/dress-truth-clone.PNG';
 import swanson from '../../images/swanson-thumbnail.png';
 import './projects.css';
 
@@ -33,7 +34,7 @@ class Projects extends Component {
 
     render() {
 
-        let imgArr = [ workFlow, treeFrogsWed, swanson ]
+        let imgArr = [ workFlow, treeFrogsWed, truthClone, swanson ]
 
         let mappedData = data.map( ( project, i ) => {
             return(
