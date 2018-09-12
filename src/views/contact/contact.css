@@ -12,7 +12,6 @@ html {
     flex-direction: column;
     align-items: center;
     background: rgb(85, 85, 85);
-    font-family: 'Open Sans', sans-serif;
 }
 
 .contact-header {

@@ -8,8 +8,7 @@ html {
 .about-body {
     width: 50%;
     height: 350px;
-    background: #2E2E2E; 
-    font-family: 'Open Sans', sans-serif;
+    background: #2E2E2E;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,25 +21,26 @@ html {
     margin-top: -100px;
     margin-right: -100%;
     z-index: 50;
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0px 12px 20px #00000099;
 }
 
 .about-headshot:before {
     content: "";
     position: absolute;
+    box-shadow: inset 1px 7px 12px 1px #fffd;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     z-index: -1;
-    background: url('../../images/headshot.jpg');
+    background: url('../../images/pro-headshot3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    -webkit-transform: rotate(90deg);
+    /* -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    transform: rotate(90deg);
+    transform: rotate(90deg); */
 }
 
 .about-header {
@@ -53,7 +53,7 @@ html {
 .about-info {
     width: 500px;
     color: white;
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: .5px;
     font-size: 14px;
     line-height: 150%;

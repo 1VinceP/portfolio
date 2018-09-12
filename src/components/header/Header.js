@@ -25,16 +25,14 @@ class Header extends Component {
     componentDidMount() {
 
         if( this.state.width > 800 ) {
-            console.log( this.state.width )
             this.setState({
                 skills: 600,
-                projects: 992,
+                projects: 1090,
                 contact: 2000,
                 contactTitle: 'Contact Me'
             })
         }
         else {
-            console.log( this.state.width )
             this.setState({
                 skills: 570,
                 projects: 950,
@@ -61,8 +59,6 @@ class Header extends Component {
 
     render() {
 
-        console.log( this.state )
-        console.log( this.state.width )
         return(
             <div className='header-body'>
                 <section className='header-left'>
