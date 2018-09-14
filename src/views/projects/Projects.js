@@ -39,14 +39,10 @@ class Projects extends Component {
                         {
                             project.github && <a href={project.github} target='_blank' rel='noopener noreferrer'><img className='project-gh-link' src={github} alt='' /></a>
                         }
-
                     </div>
 
-
                     <Slider link={project.link} images={project.image} />
-
                     <br/>
-
                     <ProjectCard project={project} />
                 </div>
             )

@@ -16,32 +16,35 @@ class Header extends Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.setState({
             width: window.innerWidth
+        }, () => {
+            this.setScrollValues()
         })
     }
 
-    componentDidMount() {
-
+    setScrollValues() {
+        // Set scroll values for desktop
         if( this.state.width > 800 ) {
             this.setState({
                 skills: 600,
-                projects: 1090,
+                projects: 900,
                 contact: 2000,
                 contactTitle: 'Contact Me'
             })
         }
+        // Set scroll values for mobile
         else {
+            let toProjects = 1150
             this.setState({
                 skills: 570,
-                projects: 950,
-                about: 2180,
+                projects: toProjects,
+                about: toProjects + (460 * 5),
                 contact: 6000,
                 contactTitle: 'Contact'
             })
         }
-
     }
 
     onNavClick( offset ) {
