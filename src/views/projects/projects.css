@@ -8,7 +8,7 @@ html {
 .projects-body {
     width: 100%;
     min-height: 500px;
-    background:linear-gradient(to right, #F8988C, #FFD17F );
+    background:linear-gradient(to right, #263354, #B7BBAE );
     display: flex;
     flex-direction: column;
     justify-content: space-between;
