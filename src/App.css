@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
+:root {
+    --gradient-left: #263354;
+    --gradient-right: #B7BBAE;
+}
+
 html {
   box-sizing: border-box;
 }
