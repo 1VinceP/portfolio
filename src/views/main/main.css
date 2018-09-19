@@ -5,10 +5,18 @@ html {
     box-sizing: inherit;
 }
 
+.flip-image {
+    transform: scaleX( -1 );
+    padding-right: 100px;
+}
+.flip-image div {
+    transform: scaleX( -1 );
+}
+
 .main-body {
     width: 100%;
     height: 650px;
-    background: url('../../images/hero.JPG') no-repeat center center fixed;
+    background: url('../../images/hero3.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -23,6 +31,9 @@ html {
 }
 
 @media (max-width: 750px) {
+    .flip-image {
+        padding-right: 20px;
+    }
     .main-body {
         width: 100%;
         padding-left: 20px;
