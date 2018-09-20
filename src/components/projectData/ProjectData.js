@@ -14,7 +14,7 @@ module.exports = [
         title: 'Student Tracker',
         link: '#',
         github: '',
-        techs: 'Angularjs | Node.js | PostgreSQL | RESTful API | HTML5 | CSS3',
+        techs: 'Angularjs | Node.js | PostgreSQL | RESTful API | Cron | HTML5 | CSS3',
         info: 'The DevMountain student tracker keeps stats for each student, for instructor and mentor use. Due to privacy, a live example and github link are not provided.',
         details: 'My team and I built the attendance tracking portion of this website. On the main view, you will see a quick overview of student attendance on the right side. Clicking on the student name will take you to their personal page, which has a more in-depth view of their attendance.',
         image: [images.tracker_main, images.tracker_student]

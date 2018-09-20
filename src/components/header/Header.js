@@ -65,7 +65,7 @@ class Header extends Component {
         return(
             <div className='header-body'>
                 <section className='header-left'>
-                    <div className='header-link-title' onClick={() => this.onNavClick( 0 )} >Vincent Palmer</div>
+                    <div className='header-link-title' onClick={() => this.onNavClick( 0 )}>Vincent Palmer</div>
                 </section>
 
                 <section className='header-right'>
