@@ -31,9 +31,9 @@ class Projects extends Component {
 
     render() {
 
-        let mappedData = data.map( ( project, i ) => {
+        let projects = data.map( ( project, i ) => {
             return(
-                <div className='projects-project' key={i}>
+                <div className='projects-project' style={{borderTop: `3px solid ${project.tag}aa`}} key={i}>
                     <div className='projects-project-title'>
                         <div>{project.title}</div>
                         {
@@ -57,7 +57,7 @@ class Projects extends Component {
                         <p>Click the image to head to the website.</p>
                         <p>Click the text to show more details.</p>
                     </div>
-                    {mappedData}
+                    {projects}
 
                 </section>
             </div>

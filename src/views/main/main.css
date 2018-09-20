@@ -16,6 +16,7 @@ html {
 .main-body {
     width: 100%;
     height: 650px;
+    position: relative;
     background: url('../../images/hero3.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
@@ -28,6 +29,14 @@ html {
 .main-greeting {
     font-size: 100px;
     color: white;
+}
+
+.hero-copyright {
+    font-size: 10px;
+    color: #fff6;
+    position: absolute;
+    bottom: 6px;
+    left: 8px;
 }
 
 @media (max-width: 750px) {

@@ -34,8 +34,10 @@ html {
   background: black;
   color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-left: 20px;
+  padding-right: 20px;
   font-size: 14px;
 }
 
@@ -51,6 +53,6 @@ html {
   }
 
   .app-footer {
-    width: 100%;
+    font-size: 12px;
   }
 }

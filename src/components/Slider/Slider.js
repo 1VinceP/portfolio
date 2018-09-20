@@ -4,14 +4,15 @@ import { Carousel } from 'react-bootstrap';
 
 export default function Slider({ images, link }) {
 
-    console.log( images )
-
     let image = images.map( (image, i) => {
         return (
             <Carousel.Item key={i}>
-                <a href={link} target='_blank' rel='noopener noreferrer'>
-                    <img src={image} />
-                </a>
+                { link
+                    ? <a href={link} target='_blank' rel='noopener noreferrer'>
+                        <img src={image} />
+                    </a>
+                    : <img src={image} />
+                }
             </Carousel.Item>
         )
     } )

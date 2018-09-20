@@ -18,7 +18,6 @@ class ProjectCard extends Component {
                 disabled
                 frontBackgroundColor='transparent'
                 flipped={this.state.isFlipped}
-                // backContentStyle={{overflow: 'scroll'}}
             >
                 {/* This is the front */}
                 <section ref='flipper'>
