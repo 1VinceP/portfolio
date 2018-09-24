@@ -1,3 +1,4 @@
+import React from 'react';
 
 let context = require.context('../../images', true, /\.(jpg|png|PNG)$/);
 let images = {};
@@ -7,7 +8,7 @@ context.keys().forEach( filename => {
     images[key] = context(filename)
 } )
 
-module.exports = [
+export default [
     {
         title: 'Student Tracker',
         link: '',
@@ -29,6 +30,17 @@ module.exports = [
         image: [ images.workflow_main, images.workflow_dashboard, images. workflow_project, images.workflow_analytics],
         tag: '#61DAFB',
         type: 'React'
+    },
+    {
+        title: 'Native Chore Manager',
+        link: 'https://github.com/1VinceP/native-chore-manager',
+        github: 'https://github.com/1VinceP/native-chore-manager',
+        techs: 'React Native | Redux | Thunk | Firebase',
+        info: <div>This is a chore management application. The initial user is set up as a parent, and they may create more users (either as parents or children). Parents may create and assign chores, as well as create rewards for finishing chores. <i>Larger images on Github</i>.</div>,
+        details: `It's not super pretty, but it works great. I pushed myself hard to learn React Native, Firebase, and Redux Thunk to make this project work, and I'm glad I did. It was a great experience to learn all of these technologies and I look forward to creating bigger and better native apps`,
+        image: [images.chore, images.chore2, images.chore3],
+        tag: '#61DAFB',
+        type: 'React Native'
     },
     {
         title: 'Tree Frogs Wed',

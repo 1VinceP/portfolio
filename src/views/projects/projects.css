@@ -129,6 +129,8 @@ html {
 
 .projects-project img {
     width: 375px;
+    max-height: 196px;
+    background-size: cover;
 }
 
 .projects-project p {
