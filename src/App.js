@@ -22,7 +22,7 @@ class App extends Component {
         </div>
 
         <footer className='app-footer'>
-            <div>&copy; 2018 Vincent Palmer</div>
+            <div>&copy; 2020 Vincent Palmer</div>
         </footer>
       </div>
     );
