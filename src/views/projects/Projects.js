@@ -58,7 +58,6 @@ class Projects extends Component {
                         <p>Click the text to show more details.</p>
                     </div>
                     {projects}
-
                 </section>
             </div>
         )
