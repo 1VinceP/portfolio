@@ -3,23 +3,12 @@ import React from 'react';
 let context = require.context('../../images', true, /\.(jpg|png|PNG)$/);
 let images = {};
 
-context.keys().forEach( filename => {
+context.keys().forEach(filename => {
     let key = filename.replace(/-/g, '_').split(/[^A-Za-z0-9_]/)[2]
     images[key] = context(filename)
-} )
+})
 
 export default [
-    {
-        title: 'Genesys.ref',
-        link: 'http://genesys.ref.surge.sh',
-        github: 'https://github.com/1VinceP/genesys-reference',
-        techs: 'Vue | SCSS | Jest',
-        info: 'Genesys.ref is a platform for formatting, displaying, and searching user created content - with a high degree of customization - for FFG\'s Genesys RPG. An entire portion of the website is designed to aid content creators (both new to and familiar with JSON data) in getting their creativity displayed.',
-        details: 'I started this project to get move familiar with Vue and to use as a personal resource for myself and my own games. After seeing interest from others in the Genesys community, I decided to put more effort into the design and functionality - including the ability to upload custom JSON data - to be usable for the community as a whole.',
-        image: [images.genref_talents, images.genref_search, images.genref_archetype, images.genref_homebrew_helper],
-        tag: '#41B883',
-        type: 'Vue'
-    },
     {
         title: 'Student Tracker',
         link: '',
